@@ -1,0 +1,60 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구구단</title>
+</head>
+<body>
+    <script>
+        var stop = 0;
+        while (true){
+            var ranNum1 = Math.floor(Math.random()*9)+1;
+            var ranNum2 = Math.floor(Math.random()*9)+1;
+            var num1 = ranNum1;
+            var num2 = ranNum2;
+            var result = num1 * num2
+            var que = prompt(num1 + '*' + num2)
+            if(result !== Number(que)){ //prompt는 문자로 결과 값을 받음 숫자로 변경 처리 필수!
+                alert('오답')
+            }else{
+                que
+            }
+            stop++
+        }
+    </script>
+</body>
+</html>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구구단</title>
+</head>
+<body>
+    <script>
+        while(true){
+            var num1 = Math.floor(Math.random() * 9) + 1;
+            var num2 = Math.floor(Math.random() * 9) + 1;
+            var result = num1 * num2;
+            var condition = true;
+            while(condition){
+                var ans = prompt(String(Num1) + '곱하기' + String(Num2))
+                if(result === Number(ans)){
+                    alert('Correct');
+                    condition = false;
+                }else{
+                    alert('Wrong');
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
