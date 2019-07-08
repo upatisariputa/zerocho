@@ -10,7 +10,9 @@ var result = document.getElementById('resultWin');
 //check 함수(가로줄 세로줄 txtcontent)
 
 function rowCellCheck (row, cell){
-    cellsArrWin[row][cell].textContent === writeTurn;
+    for(var i = 0; i < 3; i++){
+        cellsArrWin[row][cell].textContent === writeTurn;
+    }
 }
 
 
